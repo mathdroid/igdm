@@ -4,13 +4,26 @@
   "description": "Desktop Instagram DM Client",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "next build renderer && next export renderer",
+    "dist": "npm run build && build"
   },
   "repository": "https://github.com/mathdroid/igdm",
   "keywords": ["Electron", "instagram"],
   "author": "mathdroid",
   "license": "MIT",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "~1.7.8",
+    "electron-builder": "^19.37.1"
+  },
+  "dependencies": {
+    "electron-is-dev": "^0.3.0",
+    "electron-next": "^3.1.3",
+    "next": "^4.0.0-beta.6",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "build": {
+    "files": ["**/*", "!renderer", "renderer/out"]
   }
 }
