@@ -1,0 +1,16 @@
+{
+  "name": "igdm",
+  "version": "0.1.0",
+  "description": "Desktop Instagram DM Client",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/mathdroid/igdm",
+  "keywords": ["Electron", "instagram"],
+  "author": "mathdroid",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}
